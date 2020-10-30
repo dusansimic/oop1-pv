@@ -1,0 +1,9 @@
+8
+roland garros 2020,sport,104
+sklapanje racunara,hobiji,51
+nba finale 2020,sport,132
+italijanski recepti,razno,29
+language cafe u beogradu,strani jezici,72
+kurs farsi jezika,strani jezici,4
+gde naci polovne bubnjeve?,hobiji,13
+komonvelt kriket prvenstvo,sport,0
