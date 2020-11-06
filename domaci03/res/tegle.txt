@@ -1,0 +1,11 @@
+10
+2.0, 1.1, feferone
+5.2, 2,2, tursija
+0.5, 0.5, kornisoni
+0.5, 0.5, kornisoni
+0.5, 0.8, korinisoni
+0.75, 1.1, pekmez
+0.75, 0.8, eurokrem
+2.1, 1.2, feferone
+5.0, 2.3, tursija
+1.5, 2.5, kompot
