@@ -2,8 +2,12 @@
 
 ## Vežbe 1
 
-- [Kosarkasi](./domaci01)
+- [Košarkaši](./domaci01)
 
 ## Vežbe 2
 
 - [Forum](./domaci02)
+
+## Vežbe 3
+
+- [Špajz](./domaci03)
