@@ -1,0 +1,16 @@
+15
+11, letnja
+6
+4, zimska
+8
+6, letnja
+5, zimska
+3, letnja
+2, zimska
+4
+0, zimska
+1, letnja
+2
+5
+3, letnja
+9, zimska

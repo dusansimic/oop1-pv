@@ -15,3 +15,7 @@
 ## Vežbe 4
 
 - [Socijalna mreža](./domaci-socijalnamreza)
+
+## Vežbe 5
+
+- [Kamion](./domaci05)
