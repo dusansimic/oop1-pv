@@ -1,0 +1,11 @@
+10
+Paulaner; psenicno
+Paulaner;crveno
+Brinkhoff;crveno
+Dogma;kraft
+Baltika;crveno
+3bir; psenicno
+3bir;kraft
+Hoegaarden;psenicno
+Kabinet;kraft 
+Vrac; kraft
