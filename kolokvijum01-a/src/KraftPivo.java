@@ -9,7 +9,6 @@ public class KraftPivo extends Pivo{
 
 	@Override
 	boolean jeIzlapelo() {
-		// TODO Auto-generated method stub
 		double r = Math.random();
 		return (r < 0.9 && r> 0.7) ? false : true;
 	}
