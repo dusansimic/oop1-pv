@@ -6,6 +6,6 @@ ako je pivo nije izlapelo.
 
 Piva su se učitavala u niz iz fajla <code><a href="https://github.com/andrewtomas/oop1-pv/blob/kolokvijum-grupa-a/kolokvijum01-a/res/pivoteka.txt">pivoteka.txt</code></a> u klasi <code>Kafana</code>.
 
-U <code><a href="https://github.com/andrewtomas/oop1-pv/blob/kolokvijum-grupa-a/kolokvijum01-a/src/Main.java">Main</code> klasi smo napravili instancu klase Kafana i pozvali sve metode.
+U <code><a href="https://github.com/andrewtomas/oop1-pv/blob/kolokvijum-grupa-a/kolokvijum01-a/src/Main.java">Main</code></a> klasi smo napravili instancu klase Kafana i pozvali sve metode.
 
 Resenje by: <a href="https://github.com/andrewtomas">A. Tomas</a>
