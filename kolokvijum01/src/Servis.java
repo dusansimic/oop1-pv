@@ -1,0 +1,3 @@
+interface Servis {
+    boolean popravi();
+}

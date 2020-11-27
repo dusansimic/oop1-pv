@@ -1,0 +1,11 @@
+10
+telefon,siva,1.8,4,700
+laptop,crna,2.1,8,800,da
+desktop,bela,2.4,8,650
+desktop,bela,1.1,2,300
+laptop,siva,1.9,8,950,ne
+telefon,bela,1.8,4,550
+telefon,crna,2.1,8,950
+desktop,siva,1.4,4,500
+laptop,crna,2.1,4,700,da
+laptop,bela,1.4,4,400,da
