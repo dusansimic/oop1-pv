@@ -6,8 +6,8 @@ koju nasleđuju klase <code><a href="https://github.com/andrewtomas/oop1-pv/blob
 i <code><a href="https://github.com/andrewtomas/oop1-pv/blob/andrej-patch-2/kolokvijum01-a/src/PsenicnoPivo.java">PsenicnoPivo</a></code>.
 <br><br>
 
-Takođe je bilo potrebno definisati interfejs <code>Sanker</code> sa metodom <code>void posluziPivo()</code> <br>koju implementira klasa <code><a href="https://github.com/andrewtomas/oop1-pv/blob/kolokvijum-grupa-a/kolokvijum01-a/src/Kafana.java">Kafana</a></code> i koji posluzuje pivo 
-ako je pivo nije izlapelo.
+Takođe je bilo potrebno definisati interfejs <code>Sanker</code> sa metodom <code>void posluziPivo()</code> <br>koju implementira klasa <code><a href="https://github.com/andrewtomas/oop1-pv/blob/kolokvijum-grupa-a/kolokvijum01-a/src/Kafana.java">Kafana</a></code> i koja posluzuje pivo 
+ako pivo nije izlapelo.
 
 Piva su se učitavala u niz iz fajla <code><a href="https://github.com/andrewtomas/oop1-pv/blob/andrej-patch-2/kolokvijum01-a/res/pivoteka.txt">pivoteka.txt</code>
 </a> u klasi <code>Kafana</code>.
