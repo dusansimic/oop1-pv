@@ -1,0 +1,15 @@
+5
+pomorandza, mandarina
+limun, limeta, limun
+smokva, cvekla
+banana, lubenica
+grozdje, dinja
+pomorandza, 1, jabuka, 1, kruska, 2
+grozdje, 2, dinja, 1
+sargarepa, 1, limun, 1, lubenica, 1
+mandarina, 1, limeta, 1, lubenica, 1
+jabuka, 2, kruska, 1, cvekla, 1
+banana, 2, cvekla, 1, dinja, 1
+smokva, 2, breskva, 1, ribizla, 1
+malina, 3, kruska, 2
+nar 1, banana, 2
