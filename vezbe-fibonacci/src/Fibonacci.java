@@ -2,17 +2,18 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Fibonacci extends Application {
-    private int lastNumberValue;
     private int numberValue;
+    private int nextNumberValue;
     private Label number;
 
     private Button previous, next;
@@ -20,15 +21,16 @@ public class Fibonacci extends Application {
     class PreviousHandler implements EventHandler<ActionEvent> {
         @Override
         public void handle(ActionEvent actionEvent) {
-            if (lastNumberValue <= 0) {
-                lastNumberValue = 0;
-                numberValue = 0;
-            } else {
-                int nextNumber = numberValue - lastNumberValue;
-                numberValue = lastNumberValue;
-                lastNumberValue = nextNumber;
+            if (numberValue == 0) {
+                return;
             }
+            int incomingNumber = nextNumberValue - numberValue;
+            nextNumberValue = numberValue;
+            numberValue = incomingNumber;
             number.setText(String.format("%d", numberValue));
+            if (numberValue == 0) {
+                previous.setDisable(true);
+            }
         }
     }
 
@@ -36,21 +38,18 @@ public class Fibonacci extends Application {
         @Override
         public void handle(ActionEvent actionEvent) {
             if (numberValue == 0) {
-                lastNumberValue = 0;
-                numberValue = 1;
-            } else {
-                int nextNumber = numberValue + lastNumberValue;
-                lastNumberValue = numberValue;
-                numberValue = nextNumber;
+                previous.setDisable(false);
             }
-
+            int incomingNumber = nextNumberValue + numberValue;
+            numberValue = nextNumberValue;
+            nextNumberValue = incomingNumber;
             number.setText(String.format("%d", numberValue));
         }
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-        Scene scene = new Scene(initBase());
+        Scene scene = new Scene(initBase(), 600, 400);
         stage.setScene(scene);
         stage.setTitle("Hello world!");
         stage.show();
@@ -63,8 +62,8 @@ public class Fibonacci extends Application {
     private BorderPane initBase() {
         BorderPane base = new BorderPane();
 
-        lastNumberValue = 0;
         numberValue = 0;
+        nextNumberValue = 1;
         number = new Label(String.format("%d", numberValue));
         number.setFont(new Font(36));
 
@@ -74,26 +73,23 @@ public class Fibonacci extends Application {
         return base;
     }
 
-    private BorderPane initControls() {
-        BorderPane wrapper = new BorderPane();
-        HBox controls = new HBox();
+    private FlowPane initControls() {
+        FlowPane ctrls = new FlowPane();
+        ctrls.setAlignment(Pos.CENTER);
+        ctrls.setPadding(new Insets(16));
+        ctrls.setHgap(16);
 
         previous = new Button();
         previous.setText("Previous");
         previous.setOnAction(new PreviousHandler());
+        previous.setDisable(true);
 
         next = new Button();
         next.setText("Next");
         next.setOnAction(new NextHandler());
 
-        controls.getChildren().addAll(previous, next);
-        controls.setPadding(new Insets(16));
-        controls.setSpacing(16);
+        ctrls.getChildren().addAll(previous, next);
 
-        // Iz neko grazloga BorderPane ne želi da mi nacentrira HBox. Ovo bi trebalo da radi da mi ta dva dugmeta
-        // konstantno budu u sredni, isto ponašanje kao za labelu sa brojem.
-        wrapper.setCenter(controls);
-
-        return wrapper;
+        return ctrls;
     }
 }
