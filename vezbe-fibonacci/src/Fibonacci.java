@@ -8,10 +8,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Fibonacci extends Application {
+    private final Color DEFAULT = Color.GRAY;
+    private final Color[] COLORS = new Color[]{Color.RED, Color.GREEN, Color.BLUE};
+
     private int numberValue;
     private int nextNumberValue;
     private Label number;
@@ -28,8 +32,10 @@ public class Fibonacci extends Application {
             nextNumberValue = numberValue;
             numberValue = incomingNumber;
             number.setText(String.format("%d", numberValue));
+            number.setTextFill(COLORS[(int) (Math.random() * COLORS.length)]);
             if (numberValue == 0) {
                 previous.setDisable(true);
+                number.setTextFill(DEFAULT);
             }
         }
     }
@@ -44,6 +50,7 @@ public class Fibonacci extends Application {
             numberValue = nextNumberValue;
             nextNumberValue = incomingNumber;
             number.setText(String.format("%d", numberValue));
+            number.setTextFill(COLORS[(int) (Math.random() * COLORS.length)]);
         }
     }
 
@@ -66,6 +73,7 @@ public class Fibonacci extends Application {
         nextNumberValue = 1;
         number = new Label(String.format("%d", numberValue));
         number.setFont(new Font(36));
+        number.setTextFill(DEFAULT);
 
         base.setCenter(number);
         base.setBottom(initControls());
